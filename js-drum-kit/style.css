@@ -1,0 +1,46 @@
+.container {
+    background: linear-gradient(rgba(100,130,20,.7), rgba(100,130,20,.7)), url("bg.jpg");
+    background-size: cover;
+}
+
+.keys {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	display: flex;
+	justify-content: center;
+	grid-column-gap: 10px;
+	color: #8c0f0f;
+	margin: auto 0;
+}
+
+.key {
+	border: 2px solid #8c0f0f;
+	border-radius: 7px;
+	padding: 1rem .5rem;
+	background-color: #ccffcc;
+	width: 70px;
+	transition: all 0.1s;
+}
+
+.key span {
+	display: block;
+	font-size: 0.7em;
+	margin-top: 4px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.key kbd {
+	display: block;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.playing {
+	transform: scale(1.1);
+	border-color: #ffc600;
+	box-shadow: 0 0 10px #ffc600;
+}
