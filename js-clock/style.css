@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    background: #C33764;
+    overflow: hidden;
+    background: url("/home/saqu/Pictures/imagesDEV/annie-spratt-wuc-KEIBrdE-unsplash.jpg");
+    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.4), rgba(195, 55, 100, 0.4)), url("/home/saqu/Pictures/imagesDEV/annie-spratt-wuc-KEIBrdE-unsplash.jpg");
+    background: linear-gradient(rgba(29, 38, 113, 0.4), rgba(195, 55, 100, 0.4)), url("/home/saqu/Pictures/imagesDEV/annie-spratt-wuc-KEIBrdE-unsplash.jpg");
+    background-size: cover;
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    border: 10px solid rgb(193, 221, 215);
+    border-radius: 50%;
+    margin: 25vh 40% 80vh 50%;
+    position: absolute;
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    font-size: 0.5rem;
+    transform-origin: 100%;
+    border-radius: 5px;
+    transform: rotate(90deg);
+    /* transition: all 0.5s;
+    transition-timing-function: cubic-bezier(.21, 1.03, 0, 1.51); */
+    border: 1px solid whitesmoke;
+}
+
+.hour-hand {
+    width: 30%;
+    background-color: rgba(88, 123, 163, 0.507);
+    left: 20%;
+}
+
+.min-hand {
+    width: 42%;
+    background-color: rgba(103, 163, 88, 0.507);
+    left: 8%;
+}
+
+.sec-hand {
+    background-color: rgba(163, 155, 88, 0.658);
+    width: 47%;
+    left: 3%;
+}
