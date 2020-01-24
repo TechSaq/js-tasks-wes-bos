@@ -7,7 +7,7 @@ body {
     height: 100vh;
     background: #C33764;
     overflow: hidden;
-    background: url("/home/saqu/Pictures/imagesDEV/annie-spratt-wuc-KEIBrdE-unsplash.jpg");
+    background: url("bg.jpg");
     background: -webkit-linear-gradient(rgba(29, 38, 113, 0.4), rgba(195, 55, 100, 0.4)), url("/home/saqu/Pictures/imagesDEV/annie-spratt-wuc-KEIBrdE-unsplash.jpg");
     background: linear-gradient(rgba(29, 38, 113, 0.4), rgba(195, 55, 100, 0.4)), url("/home/saqu/Pictures/imagesDEV/annie-spratt-wuc-KEIBrdE-unsplash.jpg");
     background-size: cover;
