@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selector</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Update Style using <span>JS</span></h1>
+    </div>
+    <div class="selectors">
+        <label for="spacing">Spacing</label>
+        <input type="range" name="spacing" value="5" min="0" max="100" class="spacing" data-sizing="px">
+
+        <label for="blur">Blur</label>
+        <input type="range" name="blur" value="1" min="0" max="10" class="blur" data-sizing="px">
+
+        <label for="color">Pick Color</label>
+        <input type="color" name="color" class="color" value="#3333ff">
+    </div>
+    <div class="image">
+        <img src="image.jpg" alt="sample image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

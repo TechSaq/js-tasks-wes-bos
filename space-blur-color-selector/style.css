@@ -1,0 +1,50 @@
+:root {
+    --color: #3333ff;
+    --spacing: 5px;
+    --blur: 1px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header {
+    text-align: center;
+    background-color: rgba(20, 126, 139, 0.719);
+    color: white;
+}
+
+.header span {
+    color: var(--color);
+}
+
+.selectors {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.selectors label {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+
+.image {
+    padding: var(--spacing);
+    background-color: var(--color);
+}
+
+.image img {
+    filter: blur(var(--blur));
+    width: auto;
+    height: auto;
+}
