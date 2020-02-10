@@ -15,7 +15,7 @@ function setDate() {
 
     secHand.style.transform = 'rotate(' + secDegree + 'deg)';
     minHand.style.transform = 'rotate(' + minDegree + 'deg)';
-    hourHand.style.transform = 'rotate(' + hourHand + 'deg)';
+    hourHand.style.transform = 'rotate(' + hourDegree + 'deg)';
 
 }
 
