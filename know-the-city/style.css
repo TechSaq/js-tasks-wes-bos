@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("orange-background.jpg");
+    height: 82vh;
+}
+
+.container {
+    opacity: 0.7;
+}
+
+.search-wrapper {
+    text-align: center;
+    margin: 8% 0;
+}
+
+.search-key {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 15px;
+    font-size: 1.3rem;
+}
+
+.search-key:hover {
+    box-shadow: 0px 0px 20px rgb(112, 54, 20);
+}
