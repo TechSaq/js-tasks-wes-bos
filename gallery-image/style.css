@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: whitesmoke;
+}
+
+.container {
+    display: flex;
+}
+
+.panel {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: font-size 0.7s ease-in-out, flex 1s ease-in-out, background 5s;
+}
+
+.panel1 {
+    background-image: url("https://source.unsplash.com/1600x900/?sports");
+    flex: 1 1 50px;
+}
+
+.panel2 {
+    background-image: url("https://source.unsplash.com/1600x900/?coding");
+    flex: 1 1 50px;
+}
+
+.panel3 {
+    background-image: url("https://source.unsplash.com/1600x900/?enjoy");
+    flex: 1 1 50px;
+}
+
+.panel4 {
+    background-image: url("https://source.unsplash.com/1600x900/?calm");
+    flex: 1 1 50px;
+}
+
+.panel5 {
+    background-image: url("https://source.unsplash.com/1600x900/?work");
+    flex: 1 1 50px;
+}
+
+.panel p {
+    font-family: 'Lemonada', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+    text-shadow: 2px 2px 2px black;
+}
+
+p:first-child {
+    transform: translateY(-100%);
+}
+
+p:last-child {
+    transform: translateY(100%);
+}
+
+.panel.open-active>p:first-child {
+    transform: translateY(0);
+}
+
+.panel.open-active>p:last-child {
+    transform: translateY(0);
+}
+
+.panel.open {
+    flex: 5;
+    font-size: 2.4rem;
+}
