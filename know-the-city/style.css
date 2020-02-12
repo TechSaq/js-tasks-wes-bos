@@ -24,6 +24,7 @@ body {
     z-index: 2;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.39);
     border-radius: 5px;
+    text-align: center;
 }
 
 .search-key:hover {
@@ -46,6 +47,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .results li:nth-child(even) {
@@ -54,4 +57,19 @@ body {
 
 .results li:nth-child(odd) {
     transform: perspective(100px) rotateX(-3deg)
+}
+
+.name {
+    text-transform: capitalize;
+    flex: 2;
+    text-align: left;
+}
+
+.population {
+    font-size: small;
+    text-align: right;
+}
+
+.h1 {
+    background-color: rgba(255, 99, 71, 0.582);
 }
