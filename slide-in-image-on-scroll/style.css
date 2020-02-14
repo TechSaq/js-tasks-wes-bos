@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: goldenrod;
+}
+
+.container {
+    width: 70%;
+    min-height: 94vh;
+    margin: 20px auto;
+    background: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container>p {
+    background: inherit;
+    font-family: ubuntu, 'sans-serif';
+    font-weight: light;
+    line-height: 1.3rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 6%;
+    text-align: justify;
+}
+
+.container>p:last-child {
+    margin-bottom: 5px;
+}
+
+p:nth-child(even)>img {
+    float: right;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+p:nth-child(odd)>img {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
