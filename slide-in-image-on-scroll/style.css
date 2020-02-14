@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     background: goldenrod;
+    transition: transform 1s ease-in, visibility 1s ease-in;
 }
 
 .container {
-    width: 70%;
+    width: 60%;
     min-height: 94vh;
     margin: 20px auto;
     background: whitesmoke;
@@ -20,7 +21,6 @@
     line-height: 1.3rem;
     letter-spacing: 0.05rem;
     margin-bottom: 6%;
-    text-align: justify;
 }
 
 .container>p:last-child {
@@ -37,4 +37,19 @@ p:nth-child(odd)>img {
     float: left;
     margin-right: 10px;
     margin-top: 5px;
+}
+
+p:nth-child(even)>.slide-in {
+    transform: translate(30%);
+    visibility: hidden;
+}
+
+p:nth-child(odd)>.slide-in {
+    transform: translate(-40%);
+    visibility: hidden;
+}
+
+img.active {
+    visibility: visible;
+    transform: translate(0);
 }
