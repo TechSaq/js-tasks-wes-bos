@@ -1,0 +1,105 @@
+* contaner {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(https://images.unsplash.com/photo-1571162478581-ad3d0c1057ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80) goldenrod;
+    background-repeat: no-repeat;
+    font-family: ubuntu, 'sans-serif';
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    display: inline-block;
+    background: white;
+    padding: 14px 25px;
+    border: 5px solid rgba(218, 75, 32, 0.801);
+    box-shadow: 10px 10px 5px rgba(99, 96, 96, 0.623);
+    ;
+    color: goldenrod;
+    text-shadow: 0 2px 1px black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 20px;
+}
+
+.logo {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.wrapper {
+    background: white;
+    border-radius: 0.7rem;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 20px rgba(0, 0, 0, 0.356);
+    padding: 10px;
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-family: ubuntu, 'sans-serif';
+    color: goldenrod;
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 1px rgba(46, 44, 32, 0.767);
+}
+
+.wrapper input[type="text"] {
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    border-radius: 8px;
+    padding-left: 7px;
+    height: 24px;
+    width: 220px;
+}
+
+.wrapper input[type="submit"] {
+    border: none;
+    background: goldenrod;
+    color: white;
+    padding: 4px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.wrapper input[type="submit"]:hover {
+    background-color: rgba(218, 165, 32, 0.712);
+    cursor: pointer;
+}
+
+.submit {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dishes {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+ul.dishes li {
+    list-style: none;
+    border-top: 1px solid lightgrey;
+}
+
+ul.dishes li:last-child {
+    border-bottom: 1px solid lightgrey;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+li label {
+    line-height: 2rem;
+    text-transform: capitalize;
+}
