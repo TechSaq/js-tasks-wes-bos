@@ -96,7 +96,18 @@ ul.dishes li:last-child {
 }
 
 input[type="checkbox"] {
+    display: none;
+}
+
+input+label:before {
     margin-right: 10px;
+    content: "◻️";
+}
+
+input:checked+label:before {
+    content: "🥘";
+    margin-right: 10px;
+    font-size: 0.7rem;
 }
 
 li label {
