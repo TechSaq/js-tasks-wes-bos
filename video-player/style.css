@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    max-width: 750px;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.controls-wrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.8s ease-out;
+    transform: translateY(100%) translateY(5px);
+    margin-bottom: 5px;
+}
+
+.player:hover .controls-wrapper {
+    transform: translateY(0);
+}
+
+.progress {
+    width: 100%;
+    height: 7px;
+    border: 1px solid goldenrod;
+    margin-bottom: 5px;
+}
+
+.progress-filled {
+    width: 70%;
+    height: 7px;
+    background-color: goldenrod;
+    margin-top: -1px;
+}
+
+.controls-wrapper [type="button"] {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}

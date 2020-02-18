@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZSR Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="player">
+        <video src="song.mp4" class="video"></video>
+        <div class="controls-wrapper">
+            <div class="progress">
+                <div class="progress-filled"></div>
+            </div>
+            <input type="button" class="player-button" value="⏸">
+            <input type="range" name="volume" min="0" min="1" value="1">
+            <input type="range" name="playback-rate" min="0.5" max="2" value="1">
+            <input type="button" data-skip="-10" class="skip-back" value="<< 10s">
+            <input type="button" data-skip="10" class="skip-forward" value="10s >>">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
