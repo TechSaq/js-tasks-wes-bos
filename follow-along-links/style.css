@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: ubuntu, 'sans-serif';
+    background: rgba(238, 178, 67, 0.253);
+}
+
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: gold;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media(max-width: 900px) {
+    .navbar ul {
+        width: 100%;
+    }
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgb(14, 13, 13);
+}
+
+.contents p {
+    padding: 10px 20px;
+}
+
+.contents a {
+    color: inherit;
+}
