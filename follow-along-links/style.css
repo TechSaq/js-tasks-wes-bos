@@ -6,7 +6,7 @@
 
 body {
     font-family: ubuntu, 'sans-serif';
-    background: rgba(238, 178, 67, 0.253);
+    background: rgb(243, 191, 94);
 }
 
 .navbar {
@@ -18,7 +18,7 @@ body {
 }
 
 .navbar ul {
-    width: 45%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -32,6 +32,8 @@ body {
 
 .navbar li {
     list-style-type: none;
+    padding: 4px 6px;
+    z-index: 4;
 }
 
 .navbar li a {
@@ -45,4 +47,28 @@ body {
 
 .contents a {
     color: inherit;
+    z-index: 9;
+    position: relative;
+}
+
+.highlight {
+    transition: all 0.4s cubic-bezier(1, 0.04, 0.25, 1);
+    position: absolute;
+    background: white;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 10px;
+    border-bottom: 2px solid white;
+}
+
+a {
+    padding: 0;
+    padding: 1px 2px;
+    box-sizing: content-box;
+}
+
+li a {
+    padding: 4px 25px;
 }
