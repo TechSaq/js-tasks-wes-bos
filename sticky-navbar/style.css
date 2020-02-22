@@ -17,7 +17,7 @@ body {
 }
 
 .navbar {
-    padding: 20px 5px;
+    /* padding: 20px 5px; */
     background: rgb(179, 245, 79);
     display: flex;
     justify-content: flex-end;
@@ -26,15 +26,28 @@ body {
     top: 0;
     width: 100%;
     transition: all 0.5s;
+    box-sizing: content-box;
+    height: 60px;
+}
+
+.brand {
+    background: white;
+    max-width: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
 }
 
 .nav-ul {
     display: flex;
-    width: 50%;
+    width: 70%;
     justify-content: space-around;
+    align-self: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .nav-ul {
         width: 100%;
     }
@@ -50,9 +63,11 @@ a {
 }
 
 .contents {
-    margin: 40px 40px;
+    margin: 15px 40px;
     padding: 15px 25px;
     background: white;
+    transform: scale(0.95);
+    transition: all 0.3s ease-out;
 }
 
 .contents p {
@@ -62,4 +77,13 @@ a {
 body.fixed-nav .navbar {
     box-shadow: 0 0 8px 4px rgba(128, 128, 128, 0.267);
     position: fixed;
+    height: 50px;
+}
+
+body.fixed-nav .contents {
+    transform: scale(0.98);
+}
+
+body.fixed-nav .brand {
+    max-width: 80px;
 }
