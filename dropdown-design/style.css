@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: ubuntu, 'sans-serif';
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    background: goldenrod;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu>li {
+    padding: 20px 40px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.contents {
+    margin: 30px 50px;
+    padding: 20px 30px;
+    background: khaki;
+    border-radius: 30px;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.2rem;
+}
+
+.dropdown {
+    /* display: none; */
+    position: absolute;
+    margin-top: 10px;
+    transform: translateY(50px);
+    top: -20px;
+    padding: 20px;
+}
+
+.dropdown-bg {
+    background: white;
+    width: 100px;
+    height: 100px;
+    border: 4px solid salmon;
+    display: none;
+}
+
+.dropdown-1 img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.dropdown-3 {
+    width: auto;
+    padding: 20px 20px;
+}
+
+.dropdown-3 li {
+    padding: 5px;
+}
+
+
+}
