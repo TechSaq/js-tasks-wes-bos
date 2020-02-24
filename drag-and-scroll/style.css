@@ -16,7 +16,7 @@
     width: 100%;
     display: flex;
     padding: 100px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 80vh;
     background: rgba(255, 255, 255, 0.1);
@@ -41,12 +41,17 @@
     display: none;
 }
 
+.slider.make-drag {
+    transform: scale(1);
+    background: rgba(255, 255, 255, 0.3);
+    cursor: grabbing;
+}
+
 .slide {
     color: rgba(0, 0, 0, 0.15);
     padding: 20px;
     width: 200px;
     height: 60vh;
-    border: 2px solid rgba(61, 63, 180, 0.61);
     display: inline-flex;
     justify-content: center;
     align-items: center;
