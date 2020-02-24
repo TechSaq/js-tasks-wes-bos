@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #89253e, #3a6186);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #89253e, #3a6186);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: ubuntu, 'sans-serif';
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; */
+}
+
+.set-time {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.726);
+    padding: 10px;
+    flex: 0 0 50px;
+}
+
+.set-time button {
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    color: rgba(230, 213, 68, 0.842);
+    font-family: ubuntu, 'sans-serif';
+    user-select: none;
+    text-shadow: 0 2px green;
+}
+
+.set-time input {
+    height: 30px;
+    padding-left: 10px;
+    font-family: ubuntu, 'sans-serif';
+    border-radius: 50px;
+    border: none;
+    width: 140px;
+}
+
+input::placeholder {
+    user-select: none;
+    font-size: 0.9rem;
+}
+
+.timer {
+    color: rgba(255, 255, 255, 0.658);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown {
+    font-size: 8rem;
+}
+
+.end-time {
+    font-size: 1.6rem;
+}
