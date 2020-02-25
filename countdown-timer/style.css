@@ -37,6 +37,7 @@
     font-family: ubuntu, 'sans-serif';
     user-select: none;
     text-shadow: 0 2px green;
+    padding: 8px 14px
 }
 
 .set-time input {
